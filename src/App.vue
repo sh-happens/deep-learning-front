@@ -17,7 +17,7 @@
         <router-link v-if="authStore.user?.role === 'controller'" to="/verify"
           >Проверить</router-link
         >
-        <a href="#" @click.prevent="logout">Выход</a>
+        <a href="#" @click.prevent="logout">| Выход</a>
       </template>
     </nav>
     <router-view></router-view>
@@ -64,6 +64,7 @@ nav a {
   font-weight: bold;
   color: #2c3e50;
   margin: 0 10px;
+  text-decoration: none;
 }
 
 nav a.router-link-exact-active {

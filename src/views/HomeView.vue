@@ -11,6 +11,9 @@
         <button @click="navigateTo('/admin/audio')">
           Управление аудиофайлами
         </button>
+        <button @click="navigateTo('/admin/work-stats')">
+          Статистика выполненных работ
+        </button>
       </div>
       <div v-else-if="authStore.user?.role === 'transcriber'">
         <h2>Панель транскрайбера</h2>

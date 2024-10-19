@@ -22,26 +22,9 @@
     </div>
 
     <div class="add-user">
-      <h3>Добавить нового пользователя</h3>
-      <form @submit.prevent="addUser">
-        <input
-          v-model="newUser.username"
-          placeholder="Имя пользователя"
-          required
-        />
-        <input
-          v-model="newUser.password"
-          type="password"
-          placeholder="Пароль"
-          required
-        />
-        <select v-model="newUser.role" required>
-          <option value="admin">Администратор</option>
-          <option value="transcriber">Транскрайбер</option>
-          <option value="controller">Контролер</option>
-        </select>
-        <button type="submit">Добавить пользователя</button>
-      </form>
+      <button>
+        <router-link to="/register">Добавить пользователя</router-link>
+      </button>
     </div>
   </div>
 </template>
@@ -62,12 +45,6 @@ const stats = ref({
 })
 
 const unsuitableRecords = ref([])
-
-const newUser = ref({
-  username: '',
-  password: '',
-  role: 'transcriber',
-})
 
 const fetchStats = async () => {
   try {
@@ -96,19 +73,6 @@ const fetchUnsuitableRecords = async () => {
 
 const openTranscriber = recordId => {
   router.push({ name: 'Transcribe', params: { id: recordId } })
-}
-
-const addUser = async () => {
-  try {
-    await axios.post('http://localhost:5000/api/admin/users', newUser.value, {
-      headers: { 'x-auth-token': authStore.token },
-    })
-    alert('User added successfully')
-    newUser.value = { username: '', password: '', role: 'transcriber' }
-  } catch (error) {
-    console.error('Error adding user', error)
-    alert('Failed to add user')
-  }
 }
 
 onMounted(() => {
@@ -147,5 +111,13 @@ form {
 
 button {
   cursor: pointer;
+  padding: 10px 0;
+}
+
+a {
+  font-weight: bold;
+  color: #2c3e50;
+  margin: 0 10px;
+  text-decoration: none;
 }
 </style>

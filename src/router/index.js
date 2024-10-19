@@ -7,6 +7,8 @@ import Transcribe from '../views/TranscribeView.vue'
 import { useAuthStore } from '@/store/auth'
 import AdminDashboard from '../views/AdminDashboard.vue'
 import Control from '../views/ControlView.vue'
+import AdminUsers from '../views/AdminUsersView.vue'
+import AdminWorkStats from '@/views/WorkStatsView.vue'
 
 const routes = [
   { path: '/', name: 'Home', component: Home },
@@ -27,6 +29,18 @@ const routes = [
     path: '/admin/audio',
     name: 'AdminAudio',
     component: AdminAudio,
+    meta: { requiresAuth: true, roles: ['admin'] },
+  },
+  {
+    path: '/admin/users',
+    name: 'AdminUsers',
+    component: AdminUsers,
+    meta: { requiresAuth: true, roles: ['admin'] },
+  },
+  {
+    path: '/admin/work-stats',
+    name: 'AdminWorkStats',
+    component: AdminWorkStats,
     meta: { requiresAuth: true, roles: ['admin'] },
   },
   {

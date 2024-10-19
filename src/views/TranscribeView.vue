@@ -1,13 +1,13 @@
 <template>
   <div class="transcribe">
-    <h2>Transcribe Audio</h2>
+    <h2>Транскрибировать аудио</h2>
     <div v-if="currentAudio">
       <audio controls :src="currentAudio.url"></audio>
       <textarea v-model="transcription" rows="10" cols="50"></textarea>
-      <button @click="submitTranscription">Submit Transcription</button>
+      <button @click="submitTranscription">Отправить транскрипцию</button>
     </div>
     <div v-else>
-      <p>No audio files available for transcription.</p>
+      <p>Нет доступных аудиофайлов для транскрибирования.</p>
     </div>
   </div>
 </template>

@@ -1,13 +1,14 @@
 <template>
   <div class="admin-audio">
-    <h2>Manage Audio Files</h2>
-    <button @click="uploadAudio">Upload New Audio</button>
+    <h2>Управление аудиофайлами</h2>
+    <input type="file" @change="handleFileUpload" accept="audio/*" />
+    <button @click="uploadAudio">Загрузить новое аудио</button>
     <table>
       <thead>
         <tr>
-          <th>Filename</th>
-          <th>Status</th>
-          <th>Actions</th>
+          <th>Имя файла</th>
+          <th>Статус</th>
+          <th>Действия</th>
         </tr>
       </thead>
       <tbody>
@@ -15,7 +16,7 @@
           <td>{{ audio.filename }}</td>
           <td>{{ audio.status }}</td>
           <td>
-            <button @click="deleteAudio(audio._id)">Delete</button>
+            <button @click="deleteAudio(audio._id)">Удалить</button>
           </td>
         </tr>
       </tbody>
@@ -38,12 +39,12 @@ const fetchAudioFiles = async () => {
     })
     audioFiles.value = response.data
   } catch (error) {
-    console.error('Error fetching audio files', error)
+    console.error('Ошибка при получении аудиофайлов', error)
   }
 }
 
 const uploadAudio = async () => {
-  console.log('Upload audio file')
+  console.log('Загрузка аудиофайла')
 }
 
 const deleteAudio = async audioId => {
@@ -53,8 +54,13 @@ const deleteAudio = async audioId => {
     })
     await fetchAudioFiles()
   } catch (error) {
-    console.error('Error deleting audio file', error)
+    console.error('Ошибка при удалении аудиофайла', error)
   }
+}
+
+const handleFileUpload = event => {
+  // Добавьте здесь логику загрузки файла
+  console.log('Выбран файл:', event.target.files[0])
 }
 
 onMounted(fetchAudioFiles)

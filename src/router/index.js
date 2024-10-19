@@ -5,13 +5,42 @@ import Register from '../views/RegisterView.vue'
 import AdminAudio from '../views/AdminAudioView.vue'
 import Transcribe from '../views/TranscribeView.vue'
 import { useAuthStore } from '@/store/auth'
+import AdminDashboard from '../views/AdminDashboard.vue'
+import Control from '../views/ControlView.vue'
 
 const routes = [
   { path: '/', name: 'Home', component: Home },
   { path: '/login', name: 'Login', component: Login },
-  { path: '/register', name: 'Register', component: Register },
-  { path: '/admin/audio', name: 'AdminAudio', component: AdminAudio },
-  { path: '/transcribe', name: 'Transcribe', component: Transcribe },
+  {
+    path: '/register',
+    name: 'Register',
+    component: Register,
+    meta: { requiresAuth: true, roles: ['admin'] },
+  },
+  {
+    path: '/admin',
+    name: 'AdminDashboard',
+    component: AdminDashboard,
+    meta: { requiresAuth: true, roles: ['admin'] },
+  },
+  {
+    path: '/admin/audio',
+    name: 'AdminAudio',
+    component: AdminAudio,
+    meta: { requiresAuth: true, roles: ['admin'] },
+  },
+  {
+    path: '/transcribe',
+    name: 'Transcribe',
+    component: Transcribe,
+    meta: { requiresAuth: true, roles: ['transcriber'] },
+  },
+  {
+    path: '/verify',
+    name: 'Control',
+    component: Control,
+    meta: { requiresAuth: true, roles: ['controller'] },
+  },
 ]
 
 const router = createRouter({
@@ -21,7 +50,7 @@ const router = createRouter({
 
 router.beforeEach((to, from, next) => {
   const authStore = useAuthStore()
-  const publicPages = ['/login', '/register']
+  const publicPages = ['/login']
   const authRequired = !publicPages.includes(to.path)
 
   if (authRequired && !authStore.isAuthenticated) {

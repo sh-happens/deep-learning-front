@@ -14,6 +14,7 @@ export const useAuthStore = defineStore('auth', {
           { username, password },
         )
         this.token = response.data.token
+        this.user = response.data.user
         localStorage.setItem('token', this.token)
       } catch (error) {
         console.error('Login failed', error)
@@ -27,6 +28,7 @@ export const useAuthStore = defineStore('auth', {
           { username, password, role },
         )
         this.token = response.data.token
+        this.user = response.data.user
         localStorage.setItem('token', this.token)
       } catch (error) {
         console.error('Registration failed', error)
@@ -41,5 +43,6 @@ export const useAuthStore = defineStore('auth', {
   },
   getters: {
     isAuthenticated: state => !!state.token,
+    userRole: state => state.user?.role,
   },
 })

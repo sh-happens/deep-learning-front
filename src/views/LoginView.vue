@@ -1,15 +1,15 @@
 <template>
   <div>
-    <h2>Login</h2>
+    <h2>Вход</h2>
     <form @submit.prevent="handleLogin">
-      <input v-model="username" type="text" placeholder="Username" required />
       <input
-        v-model="password"
-        type="password"
-        placeholder="Password"
+        v-model="username"
+        type="text"
+        placeholder="Имя пользователя"
         required
       />
-      <button type="submit">Login</button>
+      <input v-model="password" type="password" placeholder="Пароль" required />
+      <button type="submit">Войти</button>
     </form>
   </div>
 </template>

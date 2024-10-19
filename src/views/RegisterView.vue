@@ -1,9 +1,9 @@
 <template>
   <div class="register">
-    <h2>Register</h2>
+    <h2>Регистрация</h2>
     <form @submit.prevent="handleRegister">
       <div>
-        <label for="username">Username:</label>
+        <label for="username">Имя пользователя:</label>
         <input
           id="username"
           v-model="username"
@@ -13,7 +13,7 @@
         />
       </div>
       <div>
-        <label for="password">Password:</label>
+        <label for="password">Пароль:</label>
         <input
           id="password"
           v-model="password"
@@ -23,7 +23,7 @@
         />
       </div>
       <div>
-        <label for="confirmPassword">Confirm Password:</label>
+        <label for="confirmPassword">Подтвердите пароль:</label>
         <input
           id="confirmPassword"
           v-model="confirmPassword"
@@ -33,13 +33,13 @@
         />
       </div>
       <div>
-        <label for="role">Role:</label>
+        <label for="role">Роль:</label>
         <select id="role" v-model="role" required>
-          <option value="transcriber">Transcriber</option>
-          <option value="controller">Controller</option>
+          <option value="transcriber">Транскрайбер</option>
+          <option value="controller">Контролер</option>
         </select>
       </div>
-      <button type="submit">Register</button>
+      <button type="submit">Зарегистрироваться</button>
     </form>
     <p v-if="error" class="error">{{ error }}</p>
   </div>

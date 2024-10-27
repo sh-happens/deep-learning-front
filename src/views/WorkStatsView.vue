@@ -1,7 +1,11 @@
 <template>
   <div class="work-report">
     <h2>Отчет о проделанной работе</h2>
-    <table>
+    <div v-if="loading" class="loading">Загрузка...</div>
+    <div v-else-if="error" class="error">
+      {{ error }}
+    </div>
+    <table v-else>
       <thead>
         <tr>
           <th>Дата</th>
@@ -14,14 +18,14 @@
         </tr>
       </thead>
       <tbody>
-        <tr v-for="item in reportItems" :key="item.id">
-          <td>{{ item.date }}</td>
-          <td>{{ item.transcription }}</td>
+        <tr v-for="item in reportItems" :key="item._id">
+          <td>{{ formatDate(item.date) }}</td>
+          <td>{{ item.transcription || 'Нет данных' }}</td>
           <td>{{ item.audioFile }}</td>
-          <td>{{ item.user }}</td>
-          <td>{{ item.control }}</td>
-          <td>{{ item.controller }}</td>
-          <td>{{ item.duration }}</td>
+          <td>{{ item.user || 'Нет данных' }}</td>
+          <td>{{ item.control || 'В ожидании' }}</td>
+          <td>{{ item.controller || 'Нет данных' }}</td>
+          <td>Не доступно</td>
         </tr>
       </tbody>
     </table>
@@ -29,40 +33,50 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
+import axios from 'axios'
+import { useAuthStore } from '@/store/auth'
 
-const reportItems = ref([
-  {
-    id: 1,
-    date: '11.05.24',
-    transcription: 'Я хотел оплатить',
-    audioFile: 'mp3/d374-827-673d.mp3',
-    user: 'Гончаров Иван',
-    control: 'Верно',
-    controller: 'Святослав Евлампий',
-    duration: 22,
-  },
-  {
-    id: 2,
-    date: '11.05.24',
-    transcription: 'Я хотел оплатить',
-    audioFile: 'mp3/d374-827-673d.mp3',
-    user: 'Гончаров Иван',
-    control: 'Верно',
-    controller: 'Святослав Евлампий',
-    duration: 15,
-  },
-  {
-    id: 3,
-    date: '11.05.24',
-    transcription: 'Я хотел оплатить',
-    audioFile: 'mp3/d374-827-673d.mp3',
-    user: 'Гончаров Иван',
-    control: 'Верно',
-    controller: 'Святослав Евлампий',
-    duration: 44,
-  },
-])
+const authStore = useAuthStore()
+
+const reportItems = ref([])
+const loading = ref(true)
+const error = ref(null)
+
+const formatDate = dateString => {
+  if (!dateString) return 'Нет данных'
+  const date = new Date(dateString)
+  return date.toLocaleDateString('ru-RU', {
+    day: '2-digit',
+    month: '2-digit',
+    year: '2-digit',
+  })
+}
+
+const fetchReport = async () => {
+  try {
+    loading.value = true
+    const response = await axios.get(
+      'http://localhost:5000/api/audio/work-report',
+      {
+        headers: {
+          Authorization: `Bearer ${authStore.token}`,
+        },
+      },
+    )
+    reportItems.value = response.data
+  } catch (err) {
+    error.value =
+      'Ошибка при загрузке данных: ' + (err.response?.data || err.message)
+    console.error('Error fetching report:', err)
+  } finally {
+    loading.value = false
+  }
+}
+
+onMounted(() => {
+  fetchReport()
+})
 </script>
 
 <style scoped>
@@ -73,6 +87,17 @@ const reportItems = ref([
   padding: 20px;
   background-color: #fff1f1;
   border-radius: 8px;
+}
+
+.loading,
+.error {
+  text-align: center;
+  padding: 20px;
+  font-size: 1.1em;
+}
+
+.error {
+  color: #dc3545;
 }
 
 h2 {

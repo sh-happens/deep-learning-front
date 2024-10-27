@@ -9,6 +9,8 @@ import AdminDashboard from '../views/AdminDashboard.vue'
 import Control from '../views/ControlView.vue'
 import AdminUsers from '../views/AdminUsersView.vue'
 import AdminWorkStats from '@/views/WorkStatsView.vue'
+import TranscribeDetails from '@/views/TranscribeDetails.vue'
+import ControlDetails from '@/views/ControlDetails.vue'
 
 const routes = [
   { path: '/', name: 'Home', component: Home },
@@ -45,15 +47,37 @@ const routes = [
   },
   {
     path: '/transcribe',
-    name: 'Transcribe',
-    component: Transcribe,
-    meta: { requiresAuth: true, roles: ['transcriber'] },
+    children: [
+      {
+        path: '',
+        name: 'Transcribe',
+        component: Transcribe,
+        meta: { requiresAuth: true, roles: ['transcriber'] },
+      },
+      {
+        path: ':id',
+        name: 'TranscribeDetails',
+        component: TranscribeDetails,
+        meta: { requiresAuth: true, roles: ['transcriber'] },
+      },
+    ],
   },
   {
     path: '/verify',
-    name: 'Control',
-    component: Control,
-    meta: { requiresAuth: true, roles: ['controller'] },
+    children: [
+      {
+        path: '',
+        name: 'Verify',
+        component: Control,
+        meta: { requiresAuth: true, roles: ['controller'] },
+      },
+      {
+        path: ':id',
+        name: 'ControlDetails',
+        component: ControlDetails,
+        meta: { requiresAuth: true, roles: ['controller'] },
+      },
+    ],
   },
 ]
 

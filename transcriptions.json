@@ -1,0 +1,852 @@
+[
+  {
+    "audio": null,
+    "existingText": "Я сегодня не могу оплатить такую сумму, позвоните пожалуйста завтра.",
+    "verifiedBy": null,
+    "transcriptionVerification": {
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    },
+    "controlledBy": null,
+    "controllerVerification": {
+      "isCorrect": null,
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    }
+  },
+  {
+    "audio": null,
+    "existingText": "Перезвоните мне через час, я сейчас на совещании.",
+    "verifiedBy": null,
+    "transcriptionVerification": {
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    },
+    "controlledBy": null,
+    "controllerVerification": {
+      "isCorrect": null,
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    }
+  },
+  {
+    "audio": null,
+    "existingText": "Да, я получил ваше письмо и ознакомился с условиями договора.",
+    "verifiedBy": null,
+    "transcriptionVerification": {
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    },
+    "controlledBy": null,
+    "controllerVerification": {
+      "isCorrect": null,
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    }
+  },
+  {
+    "audio": null,
+    "existingText": "Мы можем встретиться завтра в три часа в нашем офисе.",
+    "verifiedBy": null,
+    "transcriptionVerification": {
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    },
+    "controlledBy": null,
+    "controllerVerification": {
+      "isCorrect": null,
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    }
+  },
+  {
+    "audio": null,
+    "existingText": "Извините, но эта сумма слишком высока для нашего бюджета.",
+    "verifiedBy": null,
+    "transcriptionVerification": {
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    },
+    "controlledBy": null,
+    "controllerVerification": {
+      "isCorrect": null,
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    }
+  },
+  {
+    "audio": null,
+    "existingText": "Мы рассмотрим ваше предложение и дадим ответ в течение недели.",
+    "verifiedBy": null,
+    "transcriptionVerification": {
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    },
+    "controlledBy": null,
+    "controllerVerification": {
+      "isCorrect": null,
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    }
+  },
+  {
+    "audio": null,
+    "existingText": "Пожалуйста, отправьте нам детальную спецификацию проекта.",
+    "verifiedBy": null,
+    "transcriptionVerification": {
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    },
+    "controlledBy": null,
+    "controllerVerification": {
+      "isCorrect": null,
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    }
+  },
+  {
+    "audio": null,
+    "existingText": "К сожалению, сейчас все операторы заняты. Перезвоните через 15 минут.",
+    "verifiedBy": null,
+    "transcriptionVerification": {
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    },
+    "controlledBy": null,
+    "controllerVerification": {
+      "isCorrect": null,
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    }
+  },
+  {
+    "audio": null,
+    "existingText": "Ваш заказ будет доставлен в течение двух рабочих дней.",
+    "verifiedBy": null,
+    "transcriptionVerification": {
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    },
+    "controlledBy": null,
+    "controllerVerification": {
+      "isCorrect": null,
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    }
+  },
+  {
+    "audio": null,
+    "existingText": "Можете уточнить номер вашего заказа, пожалуйста?",
+    "verifiedBy": null,
+    "transcriptionVerification": {
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    },
+    "controlledBy": null,
+    "controllerVerification": {
+      "isCorrect": null,
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    }
+  },
+  {
+    "audio": null,
+    "existingText": "Для оформления возврата вам нужно заполнить форму на сайте.",
+    "verifiedBy": null,
+    "transcriptionVerification": {
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    },
+    "controlledBy": null,
+    "controllerVerification": {
+      "isCorrect": null,
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    }
+  },
+  {
+    "audio": null,
+    "existingText": "Спасибо за ожидание, я уточнил информацию у руководителя.",
+    "verifiedBy": null,
+    "transcriptionVerification": {
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    },
+    "controlledBy": null,
+    "controllerVerification": {
+      "isCorrect": null,
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    }
+  },
+  {
+    "audio": null,
+    "existingText": "Мы можем предложить вам скидку в размере 15 процентов.",
+    "verifiedBy": null,
+    "transcriptionVerification": {
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    },
+    "controlledBy": null,
+    "controllerVerification": {
+      "isCorrect": null,
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    }
+  },
+  {
+    "audio": null,
+    "existingText": "Вам удобно будет подъехать в наш офис завтра в это же время?",
+    "verifiedBy": null,
+    "transcriptionVerification": {
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    },
+    "controlledBy": null,
+    "controllerVerification": {
+      "isCorrect": null,
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    }
+  },
+  {
+    "audio": null,
+    "existingText": "Извините за задержку, наши специалисты уже работают над этим вопросом.",
+    "verifiedBy": null,
+    "transcriptionVerification": {
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    },
+    "controlledBy": null,
+    "controllerVerification": {
+      "isCorrect": null,
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    }
+  },
+  {
+    "audio": null,
+    "existingText": "Да, конечно, я могу предоставить вам всю необходимую документацию.",
+    "verifiedBy": null,
+    "transcriptionVerification": {
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    },
+    "controlledBy": null,
+    "controllerVerification": {
+      "isCorrect": null,
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    }
+  },
+  {
+    "audio": null,
+    "existingText": "Пожалуйста, продиктуйте ваш номер телефона для связи.",
+    "verifiedBy": null,
+    "transcriptionVerification": {
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    },
+    "controlledBy": null,
+    "controllerVerification": {
+      "isCorrect": null,
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    }
+  },
+  {
+    "audio": null,
+    "existingText": "К сожалению, данный товар временно отсутствует на складе.",
+    "verifiedBy": null,
+    "transcriptionVerification": {
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    },
+    "controlledBy": null,
+    "controllerVerification": {
+      "isCorrect": null,
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    }
+  },
+  {
+    "audio": null,
+    "existingText": "Мы готовы обсудить условия сотрудничества на следующей неделе.",
+    "verifiedBy": null,
+    "transcriptionVerification": {
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    },
+    "controlledBy": null,
+    "controllerVerification": {
+      "isCorrect": null,
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    }
+  },
+  {
+    "audio": null,
+    "existingText": "Вы можете оставить заявку на нашем сайте или по телефону.",
+    "verifiedBy": null,
+    "transcriptionVerification": {
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    },
+    "controlledBy": null,
+    "controllerVerification": {
+      "isCorrect": null,
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    }
+  },
+  {
+    "audio": null,
+    "existingText": "Давайте я уточню у технического специалиста и перезвоню вам.",
+    "verifiedBy": null,
+    "transcriptionVerification": {
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    },
+    "controlledBy": null,
+    "controllerVerification": {
+      "isCorrect": null,
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    }
+  },
+  {
+    "audio": null,
+    "existingText": "Ваша заявка принята, ожидайте звонка нашего менеджера.",
+    "verifiedBy": null,
+    "transcriptionVerification": {
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    },
+    "controlledBy": null,
+    "controllerVerification": {
+      "isCorrect": null,
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    }
+  },
+  {
+    "audio": null,
+    "existingText": "Могу я узнать причину вашего обращения?",
+    "verifiedBy": null,
+    "transcriptionVerification": {
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    },
+    "controlledBy": null,
+    "controllerVerification": {
+      "isCorrect": null,
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    }
+  },
+  {
+    "audio": null,
+    "existingText": "Мы свяжемся с вами как только товар поступит на склад.",
+    "verifiedBy": null,
+    "transcriptionVerification": {
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    },
+    "controlledBy": null,
+    "controllerVerification": {
+      "isCorrect": null,
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    }
+  },
+  {
+    "audio": null,
+    "existingText": "Хорошо, я отправлю вам расчет стоимости на электронную почту.",
+    "verifiedBy": null,
+    "transcriptionVerification": {
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    },
+    "controlledBy": null,
+    "controllerVerification": {
+      "isCorrect": null,
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    }
+  },
+  {
+    "audio": null,
+    "existingText": "Вы можете оплатить заказ при получении или онлайн.",
+    "verifiedBy": null,
+    "transcriptionVerification": {
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    },
+    "controlledBy": null,
+    "controllerVerification": {
+      "isCorrect": null,
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    }
+  },
+  {
+    "audio": null,
+    "existingText": "Для уточнения деталей заказа назовите, пожалуйста, ваш email.",
+    "verifiedBy": null,
+    "transcriptionVerification": {
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    },
+    "controlledBy": null,
+    "controllerVerification": {
+      "isCorrect": null,
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    }
+  },
+  {
+    "audio": null,
+    "existingText": "В ближайшее время мы проведем диагностику и сообщим результаты.",
+    "verifiedBy": null,
+    "transcriptionVerification": {
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    },
+    "controlledBy": null,
+    "controllerVerification": {
+      "isCorrect": null,
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    }
+  },
+  {
+    "audio": null,
+    "existingText": "Давайте перенесем встречу на следующий вторник в то же время.",
+    "verifiedBy": null,
+    "transcriptionVerification": {
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    },
+    "controlledBy": null,
+    "controllerVerification": {
+      "isCorrect": null,
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    }
+  },
+  {
+    "audio": null,
+    "existingText": "Необходимо предоставить копию паспорта и справку с места работы.",
+    "verifiedBy": null,
+    "transcriptionVerification": {
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    },
+    "controlledBy": null,
+    "controllerVerification": {
+      "isCorrect": null,
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    }
+  },
+  {
+    "audio": null,
+    "existingText": "Мы можем предложить вам альтернативный вариант решения.",
+    "verifiedBy": null,
+    "transcriptionVerification": {
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    },
+    "controlledBy": null,
+    "controllerVerification": {
+      "isCorrect": null,
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    }
+  },
+  {
+    "audio": null,
+    "existingText": "Извините, но данная акция закончилась вчера вечером.",
+    "verifiedBy": null,
+    "transcriptionVerification": {
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    },
+    "controlledBy": null,
+    "controllerVerification": {
+      "isCorrect": null,
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    }
+  },
+  {
+    "audio": null,
+    "existingText": "Подскажите, вам удобнее получить доставку утром или вечером?",
+    "verifiedBy": null,
+    "transcriptionVerification": {
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    },
+    "controlledBy": null,
+    "controllerVerification": {
+      "isCorrect": null,
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    }
+  },
+  {
+    "audio": null,
+    "existingText": "Гарантийный срок на данный товар составляет один год.",
+    "verifiedBy": null,
+    "transcriptionVerification": {
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    },
+    "controlledBy": null,
+    "controllerVerification": {
+      "isCorrect": null,
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    }
+  },
+  {
+    "audio": null,
+    "existingText": "Прошу прощения за доставленные неудобства, мы исправим ситуацию.",
+    "verifiedBy": null,
+    "transcriptionVerification": {
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    },
+    "controlledBy": null,
+    "controllerVerification": {
+      "isCorrect": null,
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    }
+  },
+  {
+    "audio": null,
+    "existingText": "Сейчас я переключу вас на специалиста технической поддержки.",
+    "verifiedBy": null,
+    "transcriptionVerification": {
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    },
+    "controlledBy": null,
+    "controllerVerification": {
+      "isCorrect": null,
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    }
+  },
+  {
+    "audio": null,
+    "existingText": "Могу я предложить вам воспользоваться нашей новой услугой?",
+    "verifiedBy": null,
+    "transcriptionVerification": {
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    },
+    "controlledBy": null,
+    "controllerVerification": {
+      "isCorrect": null,
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    }
+  },
+  {
+    "audio": null,
+    "existingText": "Ваш запрос отправлен в обработку, ожидайте ответа в течение дня.",
+    "verifiedBy": null,
+    "transcriptionVerification": {
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    },
+    "controlledBy": null,
+    "controllerVerification": {
+      "isCorrect": null,
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    }
+  },
+  {
+    "audio": null,
+    "existingText": "Данный вопрос требует согласования с юридическим отделом.",
+    "verifiedBy": null,
+    "transcriptionVerification": {
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    },
+    "controlledBy": null,
+    "controllerVerification": {
+      "isCorrect": null,
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    }
+  },
+  {
+    "audio": null,
+    "existingText": "На текущий момент все специалисты заняты, оставайтесь на линии.",
+    "verifiedBy": null,
+    "transcriptionVerification": {
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    },
+    "controlledBy": null,
+    "controllerVerification": {
+      "isCorrect": null,
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    }
+  },
+  {
+    "audio": null,
+    "existingText": "Мы проверим наличие товара в других магазинах нашей сети.",
+    "verifiedBy": null,
+    "transcriptionVerification": {
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    },
+    "controlledBy": null,
+    "controllerVerification": {
+      "isCorrect": null,
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    }
+  },
+  {
+    "audio": null,
+    "existingText": "Для подтверждения личности назовите кодовое слово.",
+    "verifiedBy": null,
+    "transcriptionVerification": {
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    },
+    "controlledBy": null,
+    "controllerVerification": {
+      "isCorrect": null,
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    }
+  },
+  {
+    "audio": null,
+    "existingText": "Вы получите уведомление как только ваш заказ будет готов.",
+    "verifiedBy": null,
+    "transcriptionVerification": {
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    },
+    "controlledBy": null,
+    "controllerVerification": {
+      "isCorrect": null,
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    }
+  },
+  {
+    "audio": null,
+    "existingText": "Пожалуйста, заполните форму обратной связи на нашем сайте.",
+    "verifiedBy": null,
+    "transcriptionVerification": {
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    },
+    "controlledBy": null,
+    "controllerVerification": {
+      "isCorrect": null,
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    }
+  },
+  {
+    "audio": null,
+    "existingText": "Мы ценим ваше мнение и обязательно учтем его в работе.",
+    "verifiedBy": null,
+    "transcriptionVerification": {
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    },
+    "controlledBy": null,
+    "controllerVerification": {
+      "isCorrect": null,
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    }
+  },
+  {
+    "audio": null,
+    "existingText": "Система временно недоступна, попробуйте позже.",
+    "verifiedBy": null,
+    "transcriptionVerification": {
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    },
+    "controlledBy": null,
+    "controllerVerification": {
+      "isCorrect": null,
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    }
+  },
+  {
+    "audio": null,
+    "existingText": "Ваша карта лояльности успешно активирована.",
+    "verifiedBy": null,
+    "transcriptionVerification": {
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    },
+    "controlledBy": null,
+    "controllerVerification": {
+      "isCorrect": null,
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    }
+  },
+  {
+    "audio": null,
+    "existingText": "Можно ли уточнить дату вашего последнего обращения?",
+    "verifiedBy": null,
+    "transcriptionVerification": {
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    },
+    "controlledBy": null,
+    "controllerVerification": {
+      "isCorrect": null,
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    }
+  },
+  {
+    "audio": null,
+    "existingText": "Благодарим за ожидание, я готов ответить на ваши вопросы.",
+    "verifiedBy": null,
+    "transcriptionVerification": {
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    },
+    "controlledBy": null,
+    "controllerVerification": {
+      "isCorrect": null,
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    }
+  },
+  {
+    "audio": null,
+    "existingText": "Извините, но данная услуга доступна только юридическим лицам.",
+    "verifiedBy": null,
+    "transcriptionVerification": {
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    },
+    "controlledBy": null,
+    "controllerVerification": {
+      "isCorrect": null,
+      "isUnsuitable": null,
+      "verificationDate": null,
+      "comments": null
+    }
+  }
+]

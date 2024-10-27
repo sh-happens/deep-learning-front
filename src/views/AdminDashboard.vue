@@ -2,14 +2,14 @@
   <div class="admin-dashboard">
     <h2>Панель администратора</h2>
 
-    <div class="stats">
+    <!-- <div class="stats">
       <h3>Статистика</h3>
       <p>Обработанные записи: {{ stats.processedRecords }}</p>
       <p>Всего записей: {{ stats.totalRecords }}</p>
       <p>Оставшиеся записи: {{ stats.remainingRecords }}</p>
-    </div>
+    </div> -->
 
-    <div class="unsuitable-records">
+    <!-- <div class="unsuitable-records">
       <h3>Записи, непригодные для транскрипции</h3>
       <ul>
         <li v-for="record in unsuitableRecords" :key="record._id">
@@ -19,7 +19,7 @@
           </button>
         </li>
       </ul>
-    </div>
+    </div> -->
 
     <div class="add-user">
       <button>
@@ -71,6 +71,7 @@ const fetchUnsuitableRecords = async () => {
   }
 }
 
+// eslint-disable-next-line no-unused-vars
 const openTranscriber = recordId => {
   router.push({ name: 'Transcribe', params: { id: recordId } })
 }

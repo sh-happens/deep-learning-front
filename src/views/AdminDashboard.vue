@@ -48,7 +48,7 @@ const unsuitableRecords = ref([])
 
 const fetchStats = async () => {
   try {
-    const response = await axios.get('http://localhost:5000/api/admin/stats', {
+    const response = await axios.get(`http://localhost:5000/api/admin/stats`, {
       headers: { 'x-auth-token': authStore.token },
     })
     stats.value = response.data

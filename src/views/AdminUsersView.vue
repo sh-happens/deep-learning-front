@@ -41,6 +41,8 @@ const users = ref([])
 const loading = ref(true)
 const error = ref(null)
 
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL
+
 const authStore = useAuthStore()
 
 const formatRole = role => {
@@ -56,7 +58,7 @@ const fetchStats = async () => {
   try {
     loading.value = true
     const response = await axios.get(
-      'http://localhost:5000/api/transcriptions/stats',
+      `${API_BASE_URL}/api/transcriptions/stats`,
       {
         headers: {
           Authorization: `Bearer ${authStore.token}`,

@@ -10,6 +10,8 @@ const authStore = useAuthStore()
 const route = useRoute()
 const audioId = route.params.id
 
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL
+
 const showModal = ref(false)
 const modalConfig = ref({
   title: '',
@@ -92,7 +94,7 @@ const handleCorrect = async () => {
 
   try {
     await axios.put(
-      `http://localhost:5000/api/transcriptions/controller/${audioId}`,
+      `${API_BASE_URL}/api/transcriptions/controller/${audioId}`,
       {
         audioId: audioId,
         isCorrect: true,
@@ -121,7 +123,7 @@ const handleIncorrect = async () => {
 
   try {
     await axios.put(
-      `http://localhost:5000/api/transcriptions/controller/${audioId}`,
+      `${API_BASE_URL}/api/transcriptions/controller/${audioId}`,
       {
         audioId: audioId,
         isCorrect: false,
@@ -150,7 +152,7 @@ const handleUnsuitableClick = async () => {
 
   try {
     await axios.put(
-      `http://localhost:5000/api/transcriptions/controller/${audioId}/unsuitable`,
+      `${API_BASE_URL}/api/transcriptions/controller/${audioId}/unsuitable`,
       {
         audioId: audioId,
         comments: 'Not suitable for transcription',
@@ -174,7 +176,7 @@ const handleUnsuitableClick = async () => {
 const fetchUserStats = async () => {
   try {
     const response = await axios.get(
-      'http://localhost:5000/api/transcriptions/controller-stats',
+      `${API_BASE_URL}/api/transcriptions/controller-stats`,
       {
         headers: {
           Authorization: `Bearer ${authStore.token}`,
@@ -190,14 +192,11 @@ const fetchUserStats = async () => {
 
 const fetchAudioById = async () => {
   try {
-    const response = await axios.get(
-      `http://localhost:5000/api/audio/${audioId}`,
-      {
-        headers: {
-          Authorization: `Bearer ${authStore.token}`,
-        },
+    const response = await axios.get(`${API_BASE_URL}/api/audio/${audioId}`, {
+      headers: {
+        Authorization: `Bearer ${authStore.token}`,
       },
-    )
+    })
     return response.data
   } catch (error) {
     console.error('Error fetching audio:', error)
@@ -208,7 +207,7 @@ const fetchAudioById = async () => {
 const fetchHistoryById = async () => {
   try {
     const response = await axios.get(
-      `http://localhost:5000/api/transcriptions/history/${audioId}`,
+      `${API_BASE_URL}/api/transcriptions/history/${audioId}`,
       {
         headers: {
           Authorization: `Bearer ${authStore.token}`,

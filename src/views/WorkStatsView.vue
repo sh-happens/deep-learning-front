@@ -39,6 +39,8 @@ import { useAuthStore } from '@/store/auth'
 
 const authStore = useAuthStore()
 
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL
+
 const reportItems = ref([])
 const loading = ref(true)
 const error = ref(null)
@@ -56,14 +58,11 @@ const formatDate = dateString => {
 const fetchReport = async () => {
   try {
     loading.value = true
-    const response = await axios.get(
-      'http://localhost:5000/api/audio/work-report',
-      {
-        headers: {
-          Authorization: `Bearer ${authStore.token}`,
-        },
+    const response = await axios.get(`${API_BASE_URL}/api/audio/work-report`, {
+      headers: {
+        Authorization: `Bearer ${authStore.token}`,
       },
-    )
+    })
     reportItems.value = response.data
   } catch (err) {
     error.value =

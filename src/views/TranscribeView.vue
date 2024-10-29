@@ -21,6 +21,8 @@ import { useRouter } from 'vue-router'
 
 const router = useRouter()
 
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL
+
 const authStore = useAuthStore()
 const audioFiles = ref([])
 
@@ -68,7 +70,7 @@ const fetchAudioFiles = async () => {
   if (!authStore.token) return
 
   try {
-    const response = await axios.get('http://localhost:5000/api/audio', {
+    const response = await axios.get(`${API_BASE_URL}/api/audio`, {
       headers: {
         Authorization: `Bearer ${authStore.token}`,
       },

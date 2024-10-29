@@ -9,6 +9,8 @@ const authStore = useAuthStore()
 const route = useRoute()
 const audioId = route.params.id
 
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL
+
 const stats = ref({
   totalProcessed: 0,
   totalHours: 0,
@@ -45,7 +47,7 @@ const handleSave = async () => {
 
   try {
     await axios.put(
-      `http://localhost:5000/api/transcriptions/transcriber/${audioId}`,
+      `${API_BASE_URL}/api/transcriptions/transcriber/${audioId}`,
       {
         audioId: audioId,
         existingText: audio.value.existingText,
@@ -75,7 +77,7 @@ const handleReject = async () => {
 
   try {
     await axios.put(
-      `http://localhost:5000/api/transcriptions/transcriber/${audioId}`,
+      `${API_BASE_URL}/api/transcriptions/transcriber/${audioId}`,
       {
         audioId: audioId,
         existingText: audio.value.existingText,
@@ -101,7 +103,7 @@ const handleReject = async () => {
 const fetchUserStats = async () => {
   try {
     const response = await axios.get(
-      'http://localhost:5000/api/transcriptions/user-stats',
+      `${API_BASE_URL}/api/transcriptions/user-stats`,
       {
         headers: {
           Authorization: `Bearer ${authStore.token}`,
@@ -117,14 +119,11 @@ const fetchUserStats = async () => {
 
 const fetchAudioById = async () => {
   try {
-    const response = await axios.get(
-      `http://localhost:5000/api/audio/${audioId}`,
-      {
-        headers: {
-          Authorization: `Bearer ${authStore.token}`,
-        },
+    const response = await axios.get(`${API_BASE_URL}/api/audio/${audioId}`, {
+      headers: {
+        Authorization: `Bearer ${authStore.token}`,
       },
-    )
+    })
     return response.data
   } catch (error) {
     console.error('Error fetching audio:', error)
@@ -135,7 +134,7 @@ const fetchAudioById = async () => {
 const fetchHistoryById = async () => {
   try {
     const response = await axios.get(
-      `http://localhost:5000/api/transcriptions/history/${audioId}`,
+      `${API_BASE_URL}/api/transcriptions/history/${audioId}`,
       {
         headers: {
           Authorization: `Bearer ${authStore.token}`,
@@ -176,9 +175,9 @@ const loadAudioTitle = async () => {
     if (authStore.userRole === 'transcriber') {
       try {
         await axios.put(
-          `http://localhost:5000/api/audio/${audioId}/assign`,
+          `${API_BASE_URL}/api/audio/${audioId}/assign`,
           {
-            userId: authStore.user.id, // Send userId in request body
+            userId: authStore.user.id,
           },
           {
             headers: {

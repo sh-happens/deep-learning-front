@@ -32,9 +32,11 @@ import { useAuthStore } from '../store/auth'
 const authStore = useAuthStore()
 const audioFiles = ref([])
 
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL
+
 const fetchAudioFiles = async () => {
   try {
-    const response = await axios.get('http://localhost:5000/api/audio', {
+    const response = await axios.get(`${API_BASE_URL}/api/audio`, {
       headers: { 'x-auth-token': authStore.token },
     })
     audioFiles.value = response.data
@@ -49,7 +51,7 @@ const uploadAudio = async () => {
 
 const deleteAudio = async audioId => {
   try {
-    await axios.delete(`http://localhost:5000/api/audio/${audioId}`, {
+    await axios.delete(`${API_BASE_URL}/api/audio/${audioId}`, {
       headers: { 'x-auth-token': authStore.token },
     })
     await fetchAudioFiles()
